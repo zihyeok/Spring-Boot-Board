@@ -1,0 +1,5 @@
+
+#YAML AIN't Markup Language
+
+server:
+  port: 8082

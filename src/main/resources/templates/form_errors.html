@@ -1,0 +1,13 @@
+
+
+<!-- 에러띠우는거 -->
+<!-- th:fragment= 콘센트? -->
+<div th:fragment="formErrorsFragment"
+class="alert alert-danger" role="alert"
+ th:if="${#fields.hasAnyErrors()}">
+	<div th:each="err : ${#fields.allErrors()}" 
+	th:text="${err}"></div>
+</div>
+
+<!-- 이런식으로 사용함 -->
+<!-- <div th:replace="form_errors :: formErrorsFragment"></div> -->
